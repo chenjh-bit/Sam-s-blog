@@ -18,8 +18,8 @@
   --color-pink: var(--pink);
   --color-orange: var(--orange);
   --color-cyan: var(--cyan);
-  --font-sans: "Space Grotesk Variable", ui-sans-serif, system-ui, -apple-system,
-    "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --font-sans: "Space Grotesk Variable", "Noto Sans SC Variable", ui-sans-serif,
+    system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
 
   --animate-blob: blob 16s ease-in-out infinite;
   --animate-scrollline: scrollline 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;

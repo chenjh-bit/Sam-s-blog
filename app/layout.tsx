@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@fontsource-variable/space-grotesk";
+import "@fontsource-variable/noto-sans-sc";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/language-context";
 import { CursorGlow } from "@/components/cursor-glow";
