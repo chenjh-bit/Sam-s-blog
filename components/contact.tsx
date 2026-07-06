@@ -4,7 +4,7 @@ import { useLanguage } from "@/lib/language-context";
 import { Reveal } from "./reveal";
 
 export function Contact() {
-  const { dict } = useLanguage();
+  const { dict, lang } = useLanguage();
 
   return (
     <section id="contact" className="relative overflow-hidden pt-28 pb-10 md:pt-40">
@@ -17,7 +17,11 @@ export function Contact() {
           <p className="text-sm font-semibold tracking-[0.3em] text-cyan uppercase">
             {dict.contact.heading}
           </p>
-          <h2 className="text-gradient mx-auto mt-5 max-w-4xl text-[clamp(3rem,9vw,6.5rem)] leading-none font-bold tracking-tight">
+          <h2
+            className={`text-gradient mx-auto mt-5 max-w-4xl text-[clamp(3rem,9vw,6.5rem)] font-bold ${
+              lang === "zh" ? "contact-title-zh" : "leading-none tracking-tight"
+            }`}
+          >
             {dict.contact.title}
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg text-muted">{dict.contact.text}</p>

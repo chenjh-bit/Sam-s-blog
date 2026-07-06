@@ -18,8 +18,8 @@
   --color-pink: var(--pink);
   --color-orange: var(--orange);
   --color-cyan: var(--cyan);
-  --font-sans: "Space Grotesk Variable", "Noto Sans SC Variable", ui-sans-serif,
-    system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-sans: "Space Grotesk Variable", "Noto Sans SC", ui-sans-serif, system-ui,
+    "PingFang SC", "Microsoft YaHei", sans-serif;
 
   --animate-blob: blob 16s ease-in-out infinite;
   --animate-scrollline: scrollline 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -87,6 +87,13 @@ body {
 .text-outline {
   color: transparent;
   -webkit-text-stroke: 2px color-mix(in srgb, var(--foreground) 80%, transparent);
+}
+
+.contact-title-zh {
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  transform: translateX(0.18em);
 }
 
 @media (max-width: 767px) {
